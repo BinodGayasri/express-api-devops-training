@@ -12,6 +12,11 @@ let customers = [
 ];
 
 // GET all customers
+app.get("/", (req, res) => {
+  res.status(200).json(customers);
+});
+
+// GET all customers
 app.get("/customers", (req, res) => {
   res.status(200).json(customers);
 });
